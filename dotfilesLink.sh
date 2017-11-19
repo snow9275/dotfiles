@@ -1,7 +1,8 @@
 #!/bin/sh
-DOT_FILES=(.bashrc .bash_profile .gitconfig .vim .viminfo .vimrc) 
-
- for file in ${DOT_FILES[@]}
- do
-     ln -s $HOME/dotfiles/$file $HOME/$file
- done
+ 
+ln -s $HOME/dotfiles/.bashrc $HOME/.bashrc
+ln -s $HOME/dotfiles/.bash_profile $HOME/.bash_profile
+ln -s $HOME/dotfiles/.gitconfig $HOME/.gitconfig
+ln -s $HOME/dotfiles/.vim $HOME/.vim
+ln -s $HOME/dotfiles/.viminfo $HOME/.viminfo
+ln -s $HOME/dotfiles/.vimrc $HOME/.vimrc
