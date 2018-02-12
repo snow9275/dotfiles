@@ -39,7 +39,6 @@ source $VIMRUNTIME/mswin.vim
 "remap esc to C-j
 imap <C-j> <Esc>
 
-set clipboard=unnamedplus
 
 
 "NeoBundle Scripts-----------------------------

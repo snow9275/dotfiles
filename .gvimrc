@@ -1,16 +1,25 @@
 if !has('gui_running')
-    finish
+  finish
 endif
 
-"カラースキーマの設定
-colorscheme molokai
+syntax enable
 set background=dark
+colorscheme solarized
 
 "フォントの設定
-set guifont_Migu_1M:h12
+set guifont=Migu_1M:h12
 
-"ビーブ音を無効
+"ビープ音を無効にする
 set visualbell t_vb=
 
-"どのモードでもマウスが使用可能
+"どのモードでもマウスを利用できるようにする
 set mouse=a
+
+"un~ファイル
+:set undodir=$HOME/.vim/undo
+
+"フォントをmigu_c1に変更
+set guifont=Migu_1C:h12
+
+"印刷時の行番号
+set printoptions=number:y
